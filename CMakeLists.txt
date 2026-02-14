@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_compile_options(-fpermissive)
+message(
+  STATUS "C++ compiler: ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
 
 set(TARGET_NAME console-formatting-benchmarks)
 add_executable(${TARGET_NAME} src/main.cpp)
