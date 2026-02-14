@@ -15,6 +15,7 @@
 *.rej
 
 # Common editors & tools temporary files
+.vscode/
 .idea/
 *.code-workspace
 
