@@ -9,5 +9,7 @@ message(
   STATUS "C++ compiler: ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
 
 set(TARGET_NAME console-formatting-benchmarks)
-add_executable(${TARGET_NAME} src/main.cpp src/tester/string-tester.cpp
-                              src/tester/tester.cpp)
+add_executable(
+  ${TARGET_NAME}
+  src/main.cpp src/tester/tester.cpp src/tester/console-write-tester.cpp
+  src/tester/string-tester.cpp)

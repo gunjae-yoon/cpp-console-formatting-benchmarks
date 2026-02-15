@@ -1,10 +1,12 @@
+#ifndef __tester_h__
+#define __tester_h__
+
 #include <chrono>
 #include <functional>
 #include <list>
 #include <string>
 
 namespace gunjae {
-
 struct TestInfo {
   std::string name;
   std::function<void(uint64_t&)> func;
@@ -30,3 +32,5 @@ class Tester {
   std::list<TestInfo> test_infos_;
 };
 }  // namespace gunjae
+
+#endif  // __tester_h__

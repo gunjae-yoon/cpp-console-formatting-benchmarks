@@ -1,3 +1,6 @@
+#ifndef __string_tester_h__
+#define __string_tester_h__
+
 #include "string-tester.h"
 
 #include <sstream>
@@ -47,3 +50,5 @@ void StringTester::Run() {
   }
 }
 }  // namespace gunjae
+
+#endif  // __string_tester_h__
